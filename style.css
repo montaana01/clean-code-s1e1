@@ -9,16 +9,21 @@ body {
   display: none;
 }
 
-.aaa {
+.container {
   width: 500px;
   margin: 0 auto;
   display: block;
+
+  img {
+    width: 100%;
+  }
+}
+
+.header {
   text-align: right;
 }
-.aaa img {
-  width: 100%;
-}
-.aaa .more_inf {
+
+.header__details {
   font-family: fantasy, cursive;
 }
 
