@@ -27,6 +27,10 @@ body {
   font-family: fantasy, cursive;
 }
 
+.add {
+  padding: 1em 0;
+}
+
 @media (max-width:768px) {
   .aaa { text-align: center;
   }
