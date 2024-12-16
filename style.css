@@ -19,6 +19,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+}
+
 .header {
   text-align: right;
 }
@@ -31,10 +37,6 @@ body {
   padding: 1em 0;
 }
 
-@media (max-width: 768px) {
-  .aaa { text-align: center;
-  }
-}
 .centered-main-page-element {
   display: block;
   width: 500px;
