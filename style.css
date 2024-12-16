@@ -173,7 +173,7 @@ button.delete {
 }
 
 /* Completed */
-ul#completed-tasks {
+ul#done {
   label {
     text-decoration: line-through;
     color: #888;
