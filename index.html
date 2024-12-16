@@ -14,52 +14,54 @@
       <h1 class="hidden">The Eisenhower Matrix</h1>
     </div>
   </header>
-  <div class="container">
-    <section class="main__page__wrapper-item add">
-      <label for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input id="new-task" class="task" type="text">
-        <button>Add</button>
+  <section class="main__page__wrapper">
+    <div class="container">
+      <article class="main__page__wrapper-item add">
+        <label for="new-task">Add Item</label>
+        <div class="task-row-wrapper">
+          <input id="new-task" class="task" type="text">
+          <button>Add</button>
+        </div>
+      </article>
+      <article class="main__page__wrapper-item to_do">
+        <h3>Todo</h3>
+        <ul id="incompleteTasks">
+          <li>
+            <input type="checkbox" id="pay_bills">
+            <label class="task" for="pay_bills">Pay Bills</label>
+            <input type="text" class="task">
+            <button class="edit">Edit</button>
+            <button class="delete">
+              <img src="./remove.svg" alt="Remove button">
+            </button>
+          </li>
+          <li class="editMode">
+            <input type="checkbox">
+            <label class="task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task">
+            <button class="edit">Save</button>
+            <button class="delete">
+              <img src="./remove.svg" alt="Remove button">
+            </button>
+          </li>
+        </ul>
+      </article>
+      <article class="main__page__wrapper-item complete">
+        <h3>Completed</h3>
+        <ul id="completed-tasks">
+          <li>
+            <input type="checkbox" checked>
+            <label class="task">See the Doctor</label>
+            <input type="text" class="task">
+            <button class="edit">Edit</button>
+            <button class="delete">
+              <img src="./remove.svg" alt="Remove button">
+            </button>
+          </li>
+        </ul>
+      </article>
       </div>
-    </section>
-    <section class="main__page__wrapper-item to_do">
-      <h3>Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
-          <input type="checkbox" id="pay_bills">
-          <label class="task" for="pay_bills">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove button">
-          </button>
-        </li>
-        <li class="editMode">
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove button">
-          </button>
-        </li>
-      </ul>
-    </section>
-    <section class="main__page__wrapper-item complete">
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove button">
-          </button>
-        </li>
-      </ul>
-    </section>
-  </div>
+  </section>
   <script src="app.js"></script>
 </body>
 </html>
