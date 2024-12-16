@@ -14,18 +14,18 @@
       <h1 class="hidden">The Eisenhower Matrix</h1>
     </div>
   </header>
-  <section class="centered-main-page-element">
+  <section class="main__page__wrapper">
     <div class="container">
-      <div class="add">
-        <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
+      <article class="main__page__wrapper-item add__article">
+        <h3><label for="add__task">Add Item</label></h3>
+        <div class="add__article__wrapper">
+          <input id="add__task" class="add__article__wrapper-input task" type="text">
           <button>Add</button>
         </div>
-      </div>
-      <div class="to_do">
+      </article>
+      <article class="main__page__wrapper-item todo__article">
         <h3>Todo</h3>
-        <ul id="incompleteTasks">
+        <ul id="undone">
           <li>
             <input type="checkbox" id="pay_bills">
             <label class="task" for="pay_bills">Pay Bills</label>
@@ -45,10 +45,10 @@
             </button>
           </li>
         </ul>
-      </div>
-      <div class="complete">
+      </article>
+      <article class="main__page__wrapper-item complete_article">
         <h3>Completed</h3>
-        <ul id="completed-tasks">
+        <ul id="done">
           <li>
             <input type="checkbox" checked>
             <label class="task">See the Doctor</label>
@@ -59,7 +59,7 @@
             </button>
           </li>
         </ul>
-      </div>
+      </article>
       </div>
   </section>
   <script src="app.js"></script>
